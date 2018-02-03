@@ -45,4 +45,6 @@ ENV         USER=container HOME=/home/container
 COPY ./entrypoint.sh /entrypoint.sh
 CMD ["/bin/ash", "/entrypoint.sh"]
 
+ENV APP_ENV=docker
+
 CMD python3.5 run.py
